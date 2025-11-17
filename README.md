@@ -1,11 +1,10 @@
 # RCR VR Final Project  
 **CSCI VR Final — Fall 2025**  
-**Team Members:** Chris Kim, ___, ___  
+**Team Members:** Chris Kim, Rishi Damaraju, Ritvik Gaddam
 
 ---
 
-## 🧭 Project Overview
-This final project is a collaborative VR/MR experience created as part of the UGA Virtual & Mixed Reality course.  
-Our goal was to design an experience that is functional, polished, and helps users practice a useful skill, while still being engaging and intuitive.
+## 🧭 Website
+https://ugavr2025.github.io/final-project-website-rcr/
 
 ---
