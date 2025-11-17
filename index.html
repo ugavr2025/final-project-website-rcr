@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Virtual Sculpture / 3D Painting Studio (VR)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color-scheme: light dark;
+        }
+
+        body {
+            margin: 0;
+            background: #0b1020;
+            color: #f5f5f7;
+        }
+
+        header {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            background: radial-gradient(circle at top, #2e63ff 0, #0b1020 55%);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        header p {
+            margin: 0.75rem auto 0;
+            max-width: 650px;
+            line-height: 1.5;
+            color: #d4d4dc;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 2px solid #2e63ff;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+
+        .card {
+            background: rgba(9, 14, 32, 0.9);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.75rem;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        ul {
+            padding-left: 1.25rem;
+        }
+
+        li {
+            margin-bottom: 0.35rem;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.5rem 0.9rem;
+            border-radius: 999px;
+            border: 1px solid #2e63ff;
+            text-decoration: none;
+            color: #f5f5f7;
+            font-size: 0.95rem;
+            margin-top: 0.75rem;
+        }
+
+        .github-link span {
+            font-size: 1.1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.25rem;
+        }
+
+        .member-name {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .member-role {
+            font-size: 0.9rem;
+            color: #9ea3b8;
+            margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Virtual Sculpture / 3D Painting Studio (VR)</h1>
+    <p>
+        A collaborative virtual art studio where multiple users can place, resize, and color simple 3D shapes,
+        while an AI “artist NPC” watches their work and gives playful feedback in real time.
+    </p>
+</header>
+
+<main class="container">
+    <!-- GitHub Pages Link -->
+    <section class="card">
+        <h2 class="section-title">Team GitHub Pages Site</h2>
+        <p>
+            All project source code, builds, and documentation are hosted on our public GitHub Pages site:
+        </p>
+        <!-- TODO: Replace href with your actual GitHub Pages URL -->
+        <a
+            class="github-link"
+            href="https://ugavr2025.github.io/final-project-website-rcr"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>🌐</span>
+            Visit Our GitHub Pages Site
+        </a>
+    </section>
+
+    <!-- Project Description -->
+    <section class="card">
+        <h2 class="section-title">Project Overview</h2>
+        <p>
+            Our project is a <strong>Virtual Sculpture / 3D Painting Studio</strong> built for VR. In this shared space,
+            users can collaboratively “sculpt” by placing and resizing primitive 3D objects like cubes and spheres,
+            then recolor them to build complex scenes together. An AI-powered artist NPC observes the scene and
+            delivers simple, context-aware feedback and reactions to keep the creative process fun and engaging.
+        </p>
+        <p>
+            The experience focuses on a small, manageable set of interactions: selecting shapes, moving and scaling them,
+            changing colors, and undoing actions. Keeping sculpting operations relatively simple lets us spend more time
+            polishing collaboration, feedback, and overall user experience.
+        </p>
+
+        <div class="tag-list">
+            <div class="tag">VR Collaboration</div>
+            <div class="tag">AI NPC Feedback</div>
+            <div class="tag">3D Sculpting</div>
+            <div class="tag">Unity / XR</div>
+        </div>
+    </section>
+
+    <!-- Why This Idea Is Easy -->
+    <section class="card">
+        <h2 class="section-title">Why This Idea Is Feasible</h2>
+        <ul>
+            <li><strong>Sculpting is simple:</strong> We only need to resize, move, and place primitive 3D shapes.</li>
+            <li><strong>No MR anchors:</strong> The entire experience is fully virtual, so we avoid real-world alignment issues.</li>
+            <li><strong>Lightweight AI NPC:</strong> Feedback is scripted and triggered by user actions rather than full generative AI.</li>
+            <li><strong>Minimal UI:</strong> The interface is mostly a color picker, shape selector, and basic undo/redo controls.</li>
+        </ul>
+    </section>
+
+    <!-- Requirements Met -->
+    <section class="card">
+        <h2 class="section-title">Requirements Coverage</h2>
+        <ul>
+            <li><strong>Collaborative:</strong> Multiple users can join the same scene and build sculptures together.</li>
+            <li><strong>AI NPC:</strong> A floating artist character gives simple feedback lines based on what users build.</li>
+            <li><strong>UI:</strong> In-VR toolbar for color selection, shape selection, and undo/redo actions.</li>
+            <li><strong>Avatars:</strong> Users are represented via the default XR rig with tracked hands/controllers.</li>
+            <li><strong>Anchors:</strong> Not required, since the app runs purely in VR (no mixed reality anchoring needed).</li>
+        </ul>
+    </section>
+
+    <!-- Team Members & Bios -->
+    <section class="card">
+        <h2 class="section-title">Meet the Team</h2>
+        <div class="grid">
+            <!-- Member 1 -->
+            <div>
+                <div class="member-name">Member 1 — Sculpting Tools Lead</div>
+                <div class="member-role">Sculpting Tools & Object Networking</div>
+                <p>
+                    Member 1 focuses on the core sculpting interactions, including creating primitive objects,
+                    moving and scaling them, and handling deletion. They also implement the networking logic so
+                    that all sculpted objects stay synchronized across connected players.
+                </p>
+            </div>
+
+            <!-- Member 2 -->
+            <div>
+                <div class="member-name">Member 2 — AI Artist NPC Lead</div>
+                <div class="member-role">NPC Design, Animation & Feedback Logic</div>
+                <p>
+                    Member 2 is responsible for designing and animating the AI artist NPC. They implement the
+                    floating character model, add simple idle and reaction animations, and script feedback lines
+                    that are triggered by user actions such as placing new shapes or changing colors.
+                </p>
+            </div>
+
+            <!-- Member 3 -->
+            <div>
+                <div class="member-name">Member 3 — UI & Scene Lead</div>
+                <div class="member-role">In-VR UI, Undo/Redo & Environment</div>
+                <p>
+                    Member 3 designs the in-VR UI, including the color picker, shape selection bar, and undo/redo
+                    system. They also handle lighting, skybox, and environmental polish to ensure the studio feels
+                    like a cohesive, inviting creative space.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Split Summary -->
+    <section class="card">
+        <h2 class="section-title">Work Split Summary</h2>
+        <ul>
+            <li><strong>Member 1 — Sculpting Tools</strong>
+                <ul>
+                    <li>Create primitives (cube, sphere, etc.).</li>
+                    <li>Move, scale, and delete sculpted objects.</li>
+                    <li>Network synchronization for sculpted objects between users.</li>
+                </ul>
+            </li>
+            <li><strong>Member 2 — AI Artist NPC</strong>
+                <ul>
+                    <li>Design and place a floating NPC model in the scene.</li>
+                    <li>Add simple animations and idle states.</li>
+                    <li>Write scripted feedback lines.</li>
+                    <li>Trigger comments based on user actions (e.g., new shape placed, many color changes).</li>
+                </ul>
+            </li>
+            <li><strong>Member 3 — UI & Scene</strong>
+                <ul>
+                    <li>Implement color picker and shape selection UI.</li>
+                    <li>Build undo/redo system for sculpting actions.</li>
+                    <li>Set up lighting, environment, and overall scene polish.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
